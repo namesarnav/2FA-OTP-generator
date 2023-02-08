@@ -2,13 +2,10 @@ import os
 import random
 from twilio.rest import Client
 
-account_sid = 'ACc18f5ab6e637682a2251edc7c1f8393b'
-auth_token = 'e35d2def8f614ce02e9987443560dc6a'
+account_sid = 'ACCOUNT_SID'
+auth_token = 'AUTH_TOKEN'
 
-authorized_users_with_passwords = {
-    'admin': '1234'
-}
-
+authorized_users_with_passwords = { 'admin': '1234'}
 client = Client(account_sid,auth_token)
 
 def request_otp():
